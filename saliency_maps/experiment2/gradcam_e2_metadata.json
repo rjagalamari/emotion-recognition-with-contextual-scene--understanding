@@ -1,0 +1,28 @@
+{
+  "analysis": "Experiment 2 scene-only Grad-CAM",
+  "checkpoint": "experiments/experiment2_scene_only_places365/best_model.pt",
+  "checkpoint_selection": "best validation macro-F1 checkpoint saved during E2 training",
+  "best_epoch_from_history": 30,
+  "best_val_macro_f1_from_history": 0.7405431346189495,
+  "data_used_for_saliency": "CAER-S in-domain test split",
+  "manifest": "experiments/experiment2_scene_only_places365/manifest_experiment2_places365.csv",
+  "raw_root": "Zip_files/CAER-S",
+  "split_counts": {
+    "train": 41655,
+    "val": 7352,
+    "test": 20992
+  },
+  "test_rows_used_for_sampling": 20992,
+  "classes": [
+    "angry",
+    "disgusted",
+    "fearful",
+    "happy",
+    "neutral",
+    "sad",
+    "surprised"
+  ],
+  "examples_per_class": 4,
+  "seed": 42,
+  "output_grid": "experiments/experiment2_scene_only_places365/saliency/gradcam_e2_grid.png"
+}

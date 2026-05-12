@@ -63,10 +63,22 @@ The main final comparison uses the best architecture for each experiment.
 
 ## Saliency
 
-Experiment 3 saliency outputs are in:
+Saliency outputs are in:
 
 ```text
-docs/saliency_map_experiment3/
+saliency_maps/
+```
+
+Experiment 2 Grad-CAM maps are in:
+
+```text
+saliency_maps/experiment2/
+```
+
+Experiment 3 Grad-CAM maps and saliency mass results are in:
+
+```text
+saliency_maps/experiment3/
 ```
 
 For the 28 displayed Grad-CAM examples, saliency mass was:
@@ -93,4 +105,3 @@ python experiments/scene_only_pretrained/simple_mlp/run.py
 
 The scripts expect the same local dataset/feature-cache layout used in the
 project. Large raw datasets are intentionally not committed.
-
