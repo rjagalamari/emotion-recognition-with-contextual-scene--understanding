@@ -1,0 +1,119 @@
+{
+  "analysis": "Experiment 3 Grad-CAM face/body/background mass",
+  "checkpoint": "experiments/experiment3_3_places365_cross_gated/best_model.pt",
+  "data_used": "CAER-S in-domain test split",
+  "manifest": "experiments/experiment3_3_places365_cross_gated/manifest_experiment3_3_places365.csv",
+  "split_counts": {
+    "train": 41655,
+    "val": 7352,
+    "test": 20992
+  },
+  "test_rows_available": 20992,
+  "sample_n": 28,
+  "seed": 42,
+  "person_detector": "torchvision Faster R-CNN ResNet50-FPN COCO person class",
+  "person_threshold": 0.5,
+  "face_detector": "DeepFace opencv",
+  "region_definition": "face = detected face boxes; body = detected person boxes excluding face; background = outside the union of detected person and face boxes",
+  "per_image_csv": "saliency_map_experiment3/gradcam_e3_mass_per_image.csv",
+  "summary_csv": "saliency_map_experiment3/gradcam_e3_mass_summary.csv",
+  "summary_plot": "saliency_map_experiment3/gradcam_e3_mass_summary.png",
+  "summary": [
+    {
+      "label": "all",
+      "n": 28,
+      "face_mass_mean": 0.24709201896829264,
+      "face_mass_std": 0.340336409091573,
+      "body_mass_mean": 0.6601719898836953,
+      "body_mass_std": 0.3205663282534851,
+      "background_mass_mean": 0.09273597851383134,
+      "background_mass_std": 0.1478077310374726,
+      "face_detect_rate": 0.9642857142857143,
+      "person_detect_rate": 1.0
+    },
+    {
+      "label": "angry",
+      "n": 4,
+      "face_mass_mean": 0.31465378776192665,
+      "face_mass_std": 0.46145986384616516,
+      "body_mass_mean": 0.6408965289592743,
+      "body_mass_std": 0.4310800648014869,
+      "background_mass_mean": 0.04444964602589607,
+      "background_mass_std": 0.05469808125352784,
+      "face_detect_rate": 1.0,
+      "person_detect_rate": 1.0
+    },
+    {
+      "label": "disgusted",
+      "n": 4,
+      "face_mass_mean": 0.0781371546909213,
+      "face_mass_std": 0.06500191562257256,
+      "body_mass_mean": 0.8455630391836166,
+      "body_mass_std": 0.14412942559327807,
+      "background_mass_mean": 0.07629981462378055,
+      "background_mass_std": 0.08144094699017365,
+      "face_detect_rate": 1.0,
+      "person_detect_rate": 1.0
+    },
+    {
+      "label": "fearful",
+      "n": 4,
+      "face_mass_mean": 0.04348996002227068,
+      "face_mass_std": 0.028542689290757817,
+      "body_mass_mean": 0.7612664997577667,
+      "body_mass_std": 0.28445539605903064,
+      "background_mass_mean": 0.19524353228189284,
+      "background_mass_std": 0.30267891080202136,
+      "face_detect_rate": 1.0,
+      "person_detect_rate": 1.0
+    },
+    {
+      "label": "happy",
+      "n": 4,
+      "face_mass_mean": 0.29889543494209647,
+      "face_mass_std": 0.4750953116150841,
+      "body_mass_mean": 0.618187889456749,
+      "body_mass_std": 0.4168955859706837,
+      "background_mass_mean": 0.08291671052575111,
+      "background_mass_std": 0.112139341028791,
+      "face_detect_rate": 1.0,
+      "person_detect_rate": 1.0
+    },
+    {
+      "label": "neutral",
+      "n": 4,
+      "face_mass_mean": 0.27926531387493014,
+      "face_mass_std": 0.48209595131794747,
+      "body_mass_mean": 0.5908434987068176,
+      "body_mass_std": 0.4382456542000127,
+      "background_mass_mean": 0.12989117810502648,
+      "background_mass_std": 0.17562371711514307,
+      "face_detect_rate": 0.75,
+      "person_detect_rate": 1.0
+    },
+    {
+      "label": "sad",
+      "n": 4,
+      "face_mass_mean": 0.40169668942689896,
+      "face_mass_std": 0.4098211892835583,
+      "body_mass_mean": 0.5500842779874802,
+      "body_mass_std": 0.4055085123562588,
+      "background_mass_mean": 0.04821903968695551,
+      "background_mass_std": 0.0937677495784988,
+      "face_detect_rate": 1.0,
+      "person_detect_rate": 1.0
+    },
+    {
+      "label": "surprised",
+      "n": 4,
+      "face_mass_mean": 0.3135057920590043,
+      "face_mass_std": 0.2371938160106363,
+      "body_mass_mean": 0.6143621951341629,
+      "body_mass_std": 0.13922586246280777,
+      "background_mass_mean": 0.0721319283475168,
+      "background_mass_std": 0.14323691712130587,
+      "face_detect_rate": 1.0,
+      "person_detect_rate": 1.0
+    }
+  ]
+}

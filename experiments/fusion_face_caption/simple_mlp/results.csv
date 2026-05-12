@@ -1,0 +1,2 @@
+branch,input_dim,best_val_macro_f1,eval_source,accuracy,macro_f1,weighted_f1,top2_accuracy,test_accuracy,test_macro_f1,test_weighted_f1,test_top2_accuracy,test_source
+llm_fusion_simple_mlp,896,0.48965361620814896,caer_s_validation_split,0.4985038084874864,0.48965361620814896,0.48964217120966946,0.6754624591947769,0.4911394817073171,0.48285868326660747,0.4828623379422667,0.6726848323170732,caer_s_in_domain_test

@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local environments and downloaded model caches
+.venv/
+.venv*/
+.deps/
+.deepface/
+.torch_cache/
+.hf_cache/
+.keras/
+.mpl_cache/
+.mplconfig/
+
+# Raw datasets and extracted feature caches are too large for GitHub
+Zip_files/
+data/
+features/
+experiment3_data/
+experiment4_data/
+*.npz
+*.npy
+
