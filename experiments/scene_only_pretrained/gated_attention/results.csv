@@ -1,2 +1,0 @@
-branch,input_dim,best_val_macro_f1,eval_source,accuracy,macro_f1,weighted_f1,top2_accuracy,test_accuracy,test_macro_f1,test_weighted_f1,test_top2_accuracy,test_source
-scene,512,0.7187511849017627,caer_s_validation_split,0.7259249183895539,0.7187511849017627,0.7187352577632404,0.8639825897714908,0.7280868902439024,0.7204721741065702,0.7204734508055186,0.8631383384146342,caer_s_in_domain_test

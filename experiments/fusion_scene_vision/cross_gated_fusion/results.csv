@@ -1,0 +1,2 @@
+branch,input_dim,best_val_macro_f1,eval_source,accuracy,macro_f1,weighted_f1,top2_accuracy,test_accuracy,test_macro_f1,test_weighted_f1,test_top2_accuracy,test_source
+vision_fusion_cross_gated,1024,0.7740500041504327,caer_s_validation_split,0.779379760609358,0.7740500041504327,0.774041684902102,0.8973068552774756,0.7820121951219512,0.7773118249709307,0.7773121014697284,0.897437118902439,caer_s_in_domain_test

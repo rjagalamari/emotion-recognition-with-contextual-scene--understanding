@@ -15,9 +15,9 @@
   "person_threshold": 0.5,
   "face_detector": "DeepFace opencv",
   "region_definition": "face = detected face boxes; body = detected person boxes excluding face; background = outside the union of detected person and face boxes",
-  "per_image_csv": "saliency_map_experiment3/gradcam_e3_mass_per_image.csv",
-  "summary_csv": "saliency_map_experiment3/gradcam_e3_mass_summary.csv",
-  "summary_plot": "saliency_map_experiment3/gradcam_e3_mass_summary.png",
+  "per_image_csv": "saliency_maps/experiment3/gradcam_e3_mass_per_image.csv",
+  "summary_csv": "saliency_maps/experiment3/gradcam_e3_mass_summary.csv",
+  "summary_plot": "saliency_maps/experiment3/gradcam_e3_mass_summary.png",
   "summary": [
     {
       "label": "all",

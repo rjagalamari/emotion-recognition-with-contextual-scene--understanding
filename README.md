@@ -28,9 +28,9 @@ GitHub-ready copy because they are large dataset artifacts.
 Each experiment folder has two architectures:
 
 - `simple_mlp`: baseline classifier over frozen pretrained features.
-- `gated_attention`: the stronger architecture used for comparison. For the
-  single-modality experiments, this is the token-attention version. For the
-  fusion experiments, this is the gated/cross-gated fusion model.
+- `token_attention`: stronger single-modality model for face-only and
+  scene-only experiments.
+- `cross_gated_fusion`: stronger multimodal model for the fusion experiments.
 
 | Folder | Meaning |
 |---|---|
@@ -105,3 +105,12 @@ python experiments/scene_only_pretrained/simple_mlp/run.py
 
 The scripts expect the same local dataset/feature-cache layout used in the
 project. Large raw datasets are intentionally not committed.
+
+Expected local paths for rerunning:
+
+```text
+data/CAER-S/
+features/facenet512/
+features/places365_scene/
+features/blip_minilm/
+```
